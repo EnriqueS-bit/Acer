@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto3</title>
+</head>
+<body>
+    <script>
+        let contraseña;
+        const correctacontraseña = "2435";
+        do {
+        contraseña = prompt("Por favor, ingrese su contraseña:");
+        } while (contraseña !== correctacontraseña);
+        alert("¡Acceso concedido!");
+    </script>
+    <p>Pregunta: ¿Por qué se usa un bucle `do...while` en este caso en lugar de `while`? </p>
+    <p>Respuesta: El bucle do...while se usa en este caso en lugar de while porque garantiza que el bloque de código dentro del bucle se ejecute al menos una vez, 
+        independientemente de si la condición es verdadera o falsa desde el principio.</p>
+</body>
+</html>

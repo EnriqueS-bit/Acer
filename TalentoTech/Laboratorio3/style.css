@@ -1,0 +1,13 @@
+header {
+	background-color: #4CAF50;
+	color: yellow;
+	text-align: center;
+	padding: 1em;
+}
+nav ul li {
+	display: inline;
+	margin-right: 10px;
+}
+body {
+	font-family: Times New Roman;
+}

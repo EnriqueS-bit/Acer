@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel con Cuadros de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <div class="text-box left">
+            <h2>Cuadro de Texto Izquierda</h2>
+            <p>Este es el cuadro de texto a la izquierda del carrusel.</p>
+        </div>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="nequi.jpg" width="300" height="200" alt="Imagen 1" class="active">
+                <img src="mastercard.png" width="300" height="200" alt="Imagen 2">
+                <img src="daviplata.jpg" width="300" height="200" alt="Imagen 3">
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="text-box right">
+            <h2>Cuadro de Texto Derecha</h2>
+            <p>Este es el cuadro de texto a la derecha del carrusel.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

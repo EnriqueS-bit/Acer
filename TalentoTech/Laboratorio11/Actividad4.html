@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto4</title>
+</head>
+<body>
+    <script>
+    const numeroAleatorio = Math.floor(Math.random() * 10) + 1;   
+    const adivinanza = parseInt(prompt("Adivina el número (entre 1 y 10):"), 10);
+    if (adivinanza>=1 && adivinanza<=10) {    
+    if (1<=adivinanza<=10 && adivinanza === numeroAleatorio) {
+        alert("¡Felicidades, adivinaste el número!");
+    } else {
+        alert("Lo siento, el número era:"+numeroAleatorio);    
+    }
+}
+    else {
+        alert("Lo siento, ingresa un numero en el rango");  
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laboratorio15</title>
+</head>
+<body>
+    <div class="contenedor">
+
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Microcontroladores</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#home" onclick="mostrarMensaje('Inicio')">Inicio</a></li>
+                <li><a href="#ESP32" onclick="mostrarMensaje('ESP-32')">ESP-32</a></li>
+                <li><a href="#Arduino" onclick="mostrarMensaje('Arduino')">Arduino</a></li>
+                <li><a href="#ESP8266" onclick="mostrarMensaje('ESP-8266')">ESP-8266</a></li>
+            </ul>
+
+            <button id="nav-toggle" aria-label="Toggle navigation">
+                <img src="menu.png" width="60" height="70" alt="Menú">
+            </button>
+        </nav>
+    </header>
+    <div>
+        <section id="home">
+            <h1>Bienvenidos a nuestro sitio</h1>
+            <p>Este es el contenido de la sección INICIO.</p>
+        </section>
+
+        <section onclick="mostrarMensaje('seccion ESP32')" id="ESP32">
+            <h2>ESP-32</h2>
+            <p>El ESP32 es un microcontrolador (SoC) desarrollado por Espressif Systems que integra conectividad Wi-Fi y Bluetooth,
+            lo que lo hace ideal para aplicaciones de Internet de las Cosas (IoT).</p>
+            <article>
+            El ESP32 es muy versátil y se puede utilizar tanto como un sistema autónomo como un dispositivo esclavo conectado a un MCU principal. 
+            Es popular en proyectos de electrónica y desarrollo de prototipos debido a su alta integración y bajo costo.
+            </article>
+        </section>
+
+        <section onclick="mostrarMensaje('Seccion Arduino')" id="#Arduino">
+            <h2>Arduino</h2>
+            <p>El Arduino es una plataforma de electrónica de código abierto que facilita la creación de proyectos interactivos. 
+            Está basada en hardware y software fáciles de usar, lo que la hace accesible tanto para principiantes como para expertos.</p>
+        </section>
+
+        <section onclick="mostrarMensaje('seccion ESP8266')" id="#ESP8266">
+            <h2>ESP-8266</h2>
+            <p>El ESP8266 es un microcontrolador de bajo costo con conectividad Wi-Fi, desarrollado por Espressif Systems. 
+            Es muy popular en proyectos de Internet de las Cosas (IoT) debido a su capacidad para conectarse a redes Wi-Fi y su facilidad de programación. </p>
+        </section>
+         <P><span></span></P>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

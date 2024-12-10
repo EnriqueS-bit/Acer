@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+  <style>
+        body {
+            font-family: Times New Roman, sans-serif;
+            background-color: dimgray;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 97%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Contacto</h1>
+        <form>
+        	<fieldset>
+		    <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"  required placeholder="Escriba su nombre" name="nombre" required minlength="4"maxlength="10" pattern="[Aa]">
+            <br>
+            <label for="Edad">Edad actual</label>
+ 			<input type="number" id="age" required placeholder="Escriba su edad actual" name="age" min="15" max="99" step="5" pattern="[0]">
+            <br>
+            <br>
+            <label for="birthday">Fecha de Nacimiento:</label>
+ 			<input type="date" id="birthday" name="birthday">
+            <br>
+             <label>Actividades que realiza en su tiempo libre:</label>
+             <table>
+      <tr>
+        <td><input type="checkbox" id="lectura" name="hobbies[]" value="lectura"></td>
+        <td><label for="lectura">pintura</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" id="escritura" name="hobbies[]" value="escritura"></td>
+        <td><label for="escritura">Estudiar</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" id="pintura" name="hobbies[]" value="pintura"></td>
+        <td><label for="pintura">Actividades fisicas</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" id="fotografia" name="hobbies[]" value="fotografia"></td>
+        <td><label for="fotografia">Fotografía</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" id="deportes" name="hobbies[]" value="deportes"></td>
+        <td><label for="deportes">Deportes</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" id="musica" name="hobbies[]" value="musica"></td>
+        <td><label for="musica">Escuchar musica</label></td>
+      </tr>
+    </table>
+        	</fieldset>
+        	
+        	<fieldset>
+		    <legend>Información de contacto</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Escriba su email" name="email" required>
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" required placeholder="Escribe su telefono" name="telefono" pattern="[1]">
+            <br>
+        	</fieldset>
+
+        	<fieldset>
+		    <legend>Mensaje</legend>        	
+            <label for="mensaje">Nota:</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Escriba su nota" rows="4" required></textarea>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

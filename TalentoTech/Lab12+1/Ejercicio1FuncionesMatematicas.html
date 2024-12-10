@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1Funcion</title>
+</head>
+<body>
+    <script>
+            let a= parseFloat(prompt("Ingresa un valor a: "));
+            let b= parseFloat(prompt("Ingresa un valor a b: "));
+            // Función para sumar dos números
+            function sumar(a, b) {
+                let respuesta=0;
+                return a + b;
+            }
+           alert("La suma da: "+ sumar(a, b));
+
+            // Función para restar dos números
+            function restar(a, b) {
+                let respuesta=0;
+                return a - b;
+            }
+            alert("La resta da: "+ restar(a, b));
+
+            // Función para multiplicar dos números
+            function multiplicar(a, b) {
+                let respuesta=0;
+                return a * b;
+            }
+            alert("La multiplicacion da: "+ multiplicar(a, b));
+
+            // Función para dividir dos números
+            function dividir(a, b) {
+                if (b !== 0) {
+                    return a / b;
+                } else {
+                    return 'Error: División por cero';
+                }
+            }
+            alert("La division da: "+ dividir(a, b));
+
+    </script>
+</body>
+</html>

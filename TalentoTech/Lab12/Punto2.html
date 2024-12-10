@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto2</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Ingrese un número (un número negativo para terminar):"));
+        while (numero >= 0) {
+        numero = parseInt(prompt("Ingrese otro número (un número negativo para terminar):"));
+        }
+        alert("Has ingresado un número negativo. El bucle ha terminado.");
+        /*let numero = parseInt(prompt("Ingrese un número (un número negativo para terminar):"));
+while (!isNaN(numero) && numero >= 0) {
+    numero = parseInt(prompt("Ingrese otro número (un número negativo para terminar):"));
+}
+alert("Has ingresado un número negativo o un valor no válido. El bucle ha terminado.");
+    </script>
+    <p>Pregunta: ¿Qué sucede si se inicializa el contador con un valor negativo?</p>
+    <p>Respuesta: Cumple la condicion inmediatamente y termina de ejecutar</p>
+</body>
+</html>
